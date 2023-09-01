@@ -442,7 +442,7 @@ HOSTCC	= $(CCACHE) gcc
 HOSTCXX	= $(CCACHE) g++
 endif
 
-KBUILD_USERHOSTCFLAGS := -Wall -Wmissing-prototypes -Wstrict-prototypes \
+KBUILD_USERHOSTCFLAGS := -w -Wall -Wmissing-prototypes -Wstrict-prototypes \
 			 -O2 -fomit-frame-pointer -std=gnu89
 KBUILD_USERCFLAGS  := $(KBUILD_USERHOSTCFLAGS) $(USERCFLAGS)
 KBUILD_USERLDFLAGS := $(USERLDFLAGS)
